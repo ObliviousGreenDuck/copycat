@@ -1,0 +1,50 @@
+/*standard typ-selektorer*/
+
+main{
+  font-size: 2em;
+  columns: 3;
+}
+
+p{
+  margin:0;
+}
+
+/*och klass-selektorer*/
+.writers{
+  break-before: column;
+}
+
+.analysis{
+  margin-top:5%;
+}
+
+aside{
+  margin-top:20vh;
+  float:right;
+}
+
+/*och id-selektor*/
+#poe{
+  font-family: "Garamond", "Times New Roman", serif;
+}
+
+/*compound selector, väljer BARA det element som matchar alla selektorer*/
+p.quote#poe{ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*descendent selector, väljer alla element som är barn/barnbarn/barnbarnbarn till första elementet*/
+.writers p{
+  color:darkgoldenrod
+}
+
+/*descendent + nedan är "complex selectors" */
+
+.writers>p{
+  color: blue;
+}
+/* > väljer BARA p-element som är barn till .writers*/
+
+.analysis + .auth_info{
+  color:gray;
+}
